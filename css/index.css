@@ -116,4 +116,29 @@ body {
     position: absolute;
     color: gray;
     bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1d1b31;
+}
+
+.side-bar .profile-content .profile {
+    position: relative;
+    padding: 10px 10px;
+    height: 60px;
+}
+
+.side-bar .profile-content .profile .profile-intro {
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile-intro img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.profile .profile-intro .profile-me {
+    margin-left: 10px;
 }
