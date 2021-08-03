@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+.home-content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
+    transition: all 0.5s ease;
+    z-index: -1;
+    background-image: url("../imgs/home_1.jpg");/* Photo by @simonppt on Unplash */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-content .home-container {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -90%);
+}
+
+.home-content .home-container .home-quote {
+    font-family: 'Style Script', cursive;
+    color: #2C2E43;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.home-content .home-container .home-wel {
+    font-family: 'Style Script', cursive;
+    color: #2C2E43;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.home-content .home-container .brand-name {
+    color: #FFD523;
+    text-shadow: 2px 2px 5px black;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#home-a {
+    -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

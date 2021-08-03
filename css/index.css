@@ -20,7 +20,7 @@ body {
     left: 0;
     height: 100%;
     width: 78px;
-    background: #003638;
+    background: #2C2E43;
     padding: 6px 14px;
     transition: all 0.5s ease;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .side-bar .logo-content .logo {
-    color: #F3F2C9;
+    color: #FFD523;
     display: flex;
     height: 50px;
     width: 100%;
@@ -58,7 +58,7 @@ body {
 
 .side-bar #menu-btn {
     position: absolute;
-    color: #F3F2C9;
+    color: #FFD523;
     top: 6px;
     left: 55%;
     font-size: 20px;
@@ -95,7 +95,7 @@ body {
     border-radius: 6px;
     height: 36px;
     width: 130px;
-    background: #F3F2C9;
+    background: #FFD523;
     line-height: 35px;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -118,19 +118,19 @@ body {
 .side-bar ul li #search-icon {
     position: absolute;
     z-index: 99;
-    color: #F3F2C9;
+    color: #FFD523;
     font-size: 25px;
     transition: all 0.5s ease;
 }
 
 .side-bar ul li #search-icon:hover {
-    background: #F3F2C9;
-    color: #055052;
+    background: #FFD523;
+    color: #595260;
 }
 
 .side-bar.active ul li #search-icon:hover {
-    background-color: #055052;
-    color: #F3F2C9;
+    background-color: #595260;
+    color: #FFD523;
 }
 
 .side-bar ul li input {
@@ -142,14 +142,14 @@ body {
     border-radius: 12px;
     outline: none;
     border: none;
-    background: #055052;
+    background: #595260;
     padding-left: 50px;
     font-size: 18px;
-    color: #F3F2C9;
+    color: #FFD523;
 }
 
 .side-bar ul li a {
-    color: #F3F2C9;
+    color: #FFD523;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -170,7 +170,7 @@ body {
 
 .side-bar ul li a:hover {
     color: #11101d;
-    background: #F3F2C9;
+    background: #FFD523;
     transition: 0.5s;
 }
 
@@ -189,7 +189,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #055052;
+    background: #595260;
 }
 
 .side-bar .profile-content .profile {
@@ -221,7 +221,7 @@ body {
     object-fit: cover;
     border-radius: 12px;
     /* margin-left: 120px; */
-    margin-left: 3px;
+    margin-left: 3.5px;
     transition: all 0.5s ease;
 }
 
@@ -230,7 +230,7 @@ body {
     width: 50px;
     object-fit: cover;
     border-radius: 12px;
-    margin-left: 3px;
+    margin-left: 3.5px;
     transition: all 0.5s ease;
     opacity: 1;
 }
