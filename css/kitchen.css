@@ -4,11 +4,59 @@
     width: calc(100% - 78px);
     left: 78px;
     transition: all 0.5s ease;
-    z-index: -1;
     background-color: rgb(204, 207, 212);
+    /* z-index: -1; */
+
+    -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 #kitchen-a {
     -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.home-content .kitchen-container {
+    width: 100%;
+    height: 100%;
+}
+
+.home-content .kitchen-container .gallery-content {
+    height: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #595260;
+    
+}
+
+/* .gallery-content img {
+    border: 3px solid #595260;
+
+    -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+} */
+
+.gallery-content .kitchen-gallery {
+    width: 100%;
+    max-width: 1500px;
+    height: 700px;
+    background-image: url("/imgs/kitchen/kitchen_1_aaron-huber.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+.gallery-content span {
+    color: #FFD523;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.kitchen-container  .kitchen-products .text:hover {
+    cursor: pointer;
 }

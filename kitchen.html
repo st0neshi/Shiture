@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./css/animi.css">
 
     <!-- JS -->
-    <script defer src="./js/side_bar.js"></script>
+    <script defer src="/js/side_bar.js"></script>
+    <script defer src="/js/kitchen.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                 <li>
                     <i id="search-icon" class="material-icons-outlined">search</i>
                     <input type="text" placeholder="Search" />
-                    <span class="tool-tip">Search</span>
+                    <!-- <span class="tool-tip">Search</span> -->
                 </li>
                 <li>
                     <a href="./home.html">
@@ -52,7 +53,7 @@
                     <span class="tool-tip">Kitchen</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./livingroom.html">
                         <i class="material-icons-outlined">
                             smart_display
                         </i>
@@ -119,6 +120,16 @@
 
         <div class="home-content">
             <div class="kitchen-container">
+                <div class="gallery-content">
+                    <span id="prev" class="material-icons-outlined">
+                        arrow_back_ios_new
+                    </span>
+                    <!-- <img id="kitchen-gallery" src="./imgs/kitchen/kitchen_1_aaron-huber.jpg" alt="" width="1100px" height="700px"> -->
+                    <div class="kitchen-gallery"></div>
+                    <span id="next" class="material-icons-outlined">
+                        arrow_forward_ios
+                    </span>
+                </div>
             </div>
         </div>
     </div>

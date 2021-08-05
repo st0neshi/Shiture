@@ -117,7 +117,7 @@ body {
 
 .side-bar ul li #search-icon {
     position: absolute;
-    z-index: 99;
+    z-index: 90;
     color: #FFD523;
     font-size: 25px;
     transition: all 0.5s ease;
@@ -235,7 +235,13 @@ body {
     opacity: 1;
 }
 
-.side-bar.active ~ .home-content {
+.side-bar.active~.home-content {
     width: calc(100% - 240px);
     left: 240px;
+}
+
+@media (max-width: 420px) {
+    .sidebar li .tooltip {
+        display: none;
+    }
 }

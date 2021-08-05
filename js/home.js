@@ -1,10 +1,19 @@
+// const homeBackgroundImage = [
+//     "/Users/shi/workspace/Html/Shiture/imgs/home_1.jpg",
+//     "/Users/shi/workspace/Html/Shiture/imgs/home_2.jpg",
+//     "/Users/shi/workspace/Html/Shiture/imgs/home_3.jpg",
+//     "/Users/shi/workspace/Html/Shiture/imgs/home_4.jpg",
+//     "/Users/shi/workspace/Html/Shiture/imgs/home_5.jpg",
+//     "/Users/shi/workspace/Html/Shiture/imgs/home_6.jpg"
+// ]
+
 const homeBackgroundImage = [
-    "/Users/shi/workspace/Html/Shiture/imgs/home_1.jpg",
-    "/Users/shi/workspace/Html/Shiture/imgs/home_2.jpg",
-    "/Users/shi/workspace/Html/Shiture/imgs/home_3.jpg",
-    "/Users/shi/workspace/Html/Shiture/imgs/home_4.jpg",
-    "/Users/shi/workspace/Html/Shiture/imgs/home_5.jpg",
-    "/Users/shi/workspace/Html/Shiture/imgs/home_6.jpg"
+    "../imgs/home_1.jpg",
+    "../imgs/home_2.jpg",
+    "../imgs/home_3.jpg",
+    "../imgs/home_4.jpg",
+    "../imgs/home_5.jpg",
+    "../imgs/home_6.jpg"
 ]
 
 function changeBackgroundImage() {
