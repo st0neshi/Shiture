@@ -16,13 +16,9 @@ const myGallery = [
 
 let imgNum = 0;
 
-document.querySelector("#next").addEventListener('click', next);
-document.querySelector("#prev").addEventListener('click', prev);
-setInterval(next, 4000);
-
-function galleryAnimi() {
-    document.querySelector(".kitchen-gallery").className = "swing-in-top-fwd";
-}
+// document.querySelector("#next").addEventListener('click', next);
+// document.querySelector("#prev").addEventListener('click', prev);
+setInterval(next, 6000);
 
 function next() {
     imgNum++;

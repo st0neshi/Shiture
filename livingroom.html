@@ -11,12 +11,21 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet' />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/livingroom.css" />
     <link rel="stylesheet" href="./css/animi.css">
 
     <!-- JS -->
     <script defer src="./js/side_bar.js"></script>
+
+
+    <!-- <script src="/js/hover/three.min.js"></script>
+    <script src="/js/hover/TweenMax.min.js"></script>
+    <script src="/js/hover/hover-effect.umd.js"></script>
+    <script src="/js/hover/hover-effect.js"></script>
+    <script src="/js/livingroom.js"></script> -->
 </head>
 
 <body>
@@ -61,7 +70,7 @@
                     <span class="tool-tip">Livingroom</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="/bedroom.html">
                         <i class="material-icons-outlined">
                             king_bed
                         </i>
@@ -119,30 +128,31 @@
 
         <div class="home-content">
             <div class="livingroom-container">
-                <div class="livingroom-news">
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
-                    <p>sdsdsd</p>
+                <div class="gallery-content">
+                    <div class="livingroom-gallery">
+                        <div class="gallery-title">
+                            <p>Livingroom is the starting place of</p>
+                            <p>love, hope and dreams</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+    <script src="/js/hover/three.min.js"></script>
+    <script src="/js/hover/TweenMax.min.js"></script>
+    <script src="/js/hover/hover-effect.umd.js"></script>
+    <script>
+        var myAnimation = new hoverEffect({
+        parent: document.querySelector('.livingroom-gallery'),
+        intensity: 0.1,
+        image1: 'imgs/livingroom/1.jpg',
+        image2: 'imgs/livingroom/2.jpg',
+        displacementImage: 'imgs/livingroom/heightMap.png'
+    });
+    </script>
 </body>
 
 </html>

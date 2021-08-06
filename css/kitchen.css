@@ -39,9 +39,9 @@
 } */
 
 .gallery-content .kitchen-gallery {
-    width: 100%;
-    max-width: 1500px;
-    height: 700px;
+    width: 97%;
+    max-width: 2000px;
+    height: 95%;
     background-image: url("/imgs/kitchen/kitchen_1_aaron-huber.jpg");
     background-position: center;
     background-repeat: no-repeat;
