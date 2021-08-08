@@ -14,10 +14,10 @@ const myGallery = [
     "/Users/shi/workspace/Html/Shiture/imgs/kitchen/kitchen_5-watermark-designs.jpg"
 ];
 
-let imgNum = 0;
+// let imgNum = 0;
 
-document.querySelector("#next").addEventListener('click', next);
-document.querySelector("#prev").addEventListener('click', prev);
+// document.querySelector("#next").addEventListener('click', next);
+// document.querySelector("#prev").addEventListener('click', prev);
 // setInterval(next, 6000);
 
 function next() {
@@ -42,3 +42,84 @@ function prev() {
         document.querySelector(".kitchen-gallery").style.backgroundImage = "url('" + kitchenGallery[imgNum] + "')";
     }
 }
+
+// For new gallery:
+const slider = document.querySelector(".kitchen-gallery");
+const galleryNext = document.querySelector("#next");
+const galleryPrev = document.querySelector("#prev");
+const slides = document.querySelectorAll(".slide");
+const sliderIcons = document.querySelectorAll(".slide-icon");
+const numSlides = slides.length;
+let count = 0;
+
+// For next button:
+galleryNext.addEventListener('click', () => {
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    })
+    sliderIcons.forEach((sliderIcon) => {
+        sliderIcon.classList.remove("active");
+    })
+
+    count++;
+
+    if (count > (numSlides - 1)) {
+        count = 0;
+    }
+
+    slides[count].classList.add("active");
+    sliderIcons[count].classList.add("active");
+})
+
+// For prev button:
+galleryPrev.addEventListener('click', () => {
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    })
+    sliderIcons.forEach((sliderIcon) => {
+        sliderIcon.classList.remove("active");
+    })
+
+    count--;
+
+    if (count < 0) {
+        count = numSlides - 1;
+    }
+
+    slides[count].classList.add("active");
+    sliderIcons[count].classList.add("active");
+})
+
+// Autoplay:
+let playSlider;
+
+let repeater = () => {
+    playSlider = setInterval(function() {
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        })
+        sliderIcons.forEach((sliderIcon) => {
+            sliderIcon.classList.remove("active");
+        })
+    
+        count++;
+    
+        if (count > (numSlides - 1)) {
+            count = 0;
+        }
+    
+        slides[count].classList.add("active");
+        sliderIcons[count].classList.add("active");
+    }, 5000);
+}
+repeater();
+
+// Stop autoplay:
+slider.addEventListener('mouseover', () => {
+    clearInterval(playSlider);
+})
+
+// Restart autoplay after stop:
+slider.addEventListener("mouseout", () => {
+    repeater();
+})

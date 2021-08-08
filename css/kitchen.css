@@ -16,14 +16,14 @@
     animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.home-content .kitchen-container {
+/* .home-content .kitchen-container {
     width: 100%;
     height: 100%;
-}
+} */
 
 /* body */
 .home-content .kitchen-container .gallery-content { 
-    height: 1050px;
+    height: 950px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -34,17 +34,25 @@
 /* slider */
 .kitchen-container .gallery-content .kitchen-gallery {
     position: relative;
-    height: 96%;
-    width: 97%;
+    min-height: 910px;
+    width: 100%;
     max-width: 2000px;
-    background-color: #595260;
     overflow: hidden;
+    border-radius: 2px;
+    margin: 20px;
 }
 
+/* slide */
 .kitchen-gallery .slide {
     position: absolute;
     width: 100%;
     height: 100%;
+    clip-path: circle(0% at 100% 50%);
+}
+
+.kitchen-gallery .slide.active {
+    clip-path: circle(150.0% at 100% 50%);
+    transition: 2s;
 }
 
 .gallery-content .kitchen-gallery img {
@@ -79,7 +87,7 @@
 }
 
 .gallery-navi {
-    height: 1000px;
+    height: 890px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,17 +119,47 @@
 }
 
 .navi-locate {
-    z-index: 990;
+    z-index: 90;
     display: flex;
     justify-content: center;
 }
 
 .navi-locate .slide-icon {
-    z-index: 990;
-    background: black;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.5);
     width: 20px;
     height: 10px;
     margin: 0 6px;
+    border-radius: 2px;
+    box-shadow: 0 5px 25px rgb(1, 1, 1 / 5%);
+}
+
+.navi-locate .slide-icon.active {
+    background: #FFD523;
+}
+
+@media (max-width: 900px) {
+    .kitchen-container .gallery-content .kitchen-gallery {
+        width: 100%;
+    }
+
+    .gallery-content .kitchen-gallery .info {
+        position: relative;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-content .kitchen-gallery .info h2 {
+        font-size: 1.5em;
+        line-height: 40px;
+    }
+
+    .gallery-content .kitchen-gallery .info p {
+        font-size: 0.8em;
+    }
 }
 
 /* .gallery-content .kitchen-gallery {
