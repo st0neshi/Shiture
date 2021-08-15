@@ -207,6 +207,11 @@ body {
     white-space: nowrap;
 }
 
+.side-bar .profile-content .profile .profile-intro a {
+    text-decoration: none;
+    color:inherit;
+}
+
 .side-bar .profile-content .profile .profile-intro .profile-name {
     margin-left: 5px;
     opacity: 0;
