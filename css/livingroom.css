@@ -62,3 +62,10 @@
     padding: 1rem;
     padding-right: 2rem;
 }
+
+.gallery-title span {
+    color: #FFD523;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Kaushan Script', cursive;
+}
