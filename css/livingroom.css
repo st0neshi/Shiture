@@ -58,7 +58,7 @@
     font-size: 3rem;
     color: rgb(204, 207, 212);
     text-shadow: 2px 2px 5px black;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Style Script', cursive;
     padding: 1rem;
     padding-right: 2rem;
 }
@@ -67,5 +67,5 @@
     color: #FFD523;
     font-size: 3rem;
     text-shadow: 2px 2px 5px black;
-    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
 }
