@@ -217,7 +217,7 @@
 
 .kitchen-title {
     height: auto;
-    width: 50%;
+    width: auto;
     border-bottom: dotted;
 }
 
@@ -339,6 +339,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     /* background-color: blueviolet; */
 }
 
@@ -346,7 +347,7 @@
     height: auto;
     width: 700px;
     display: block;
-    border-top: dotted #2C2E43;
+    /* border-top: dotted #2C2E43; */
     /* background-color: skyblue; */
 }
 
